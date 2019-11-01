@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <script language=javascript>
+        codigo=prompt("Digite seu codigo...")
+        anoDeNascimento=parseFloat(prompt("Digite o ano do seu nascimento..."))
+        anoDeEmprego=parseFloat(prompt("Digite o ano de ingresso na empresa..."))
+        soma=2019-anoDeNascimento
+        soma1=2019-anoDeEmprego
+        
+        if(soma>=65)
+        {   
+            resultado="Requer aposentadoria"
+        }
+        if(soma1>=30)
+        {
+            resultado="Requer aposentadoria"
+        }
+        if(soma>=60)
+        {
+            if(soma1>=25)
+            resultado="Requer aposentadoria"
+        }
+        if(soma<59)
+        {   
+            if(soma1<24)
+            resultado="Não requer aposentadoria"
+        }
+       alert(resultado)
+       document.write(resultado) 
+
+        </script>
+        <body> </body>
+    </head>
+</html>
